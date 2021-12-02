@@ -40,3 +40,7 @@ def advent_2b(course: list) -> int:
 input_data = ["forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"]
 assert (advent_2a(input_data)) == 150
 assert (advent_2b(input_data)) == 900
+
+# Use this bash command to convert the copied input from the website to items of the list you'll use 
+# pbpaste - this pastes your copied input
+# pbpaste | awk -v FS="\n" -v OFS="'" '{print "",$1, ""}' | paste -sd, -
